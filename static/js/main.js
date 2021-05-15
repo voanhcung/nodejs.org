@@ -202,9 +202,9 @@
     var version
     var el
 
-    for (var i = 0; i < linkEls.length; i++) {
-      version = linkEls[i].getAttribute('data-version')
-      el = linkEls[i]
+    linkEls.forEach(function (link) {
+      version = link.getAttribute('data-version')
+      el = link
 
       // Windows 64-bit files for 0.x.x need to be prefixed with 'x64/'
       if (os === 'Win' && (version[1] === '0' && arch === 'x64')) {
@@ -212,7 +212,7 @@
       }
 
       el.href += filename.replace('%version%', version)
-    }
+    })
   }
 
   switch (os) {
