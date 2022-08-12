@@ -65,7 +65,7 @@
   "devDependencies": {
     "chokidar": "^3.5.2",
     "cross-env": "^7.0.3",
-    "delay-cli": "^1.1.0",
+    "delay-cli": "^2.0.0",
     "faucet": "0.0.1",
     "linkinator": "^2.13.6",
     "lockfile-lint": "^4.6.2",
